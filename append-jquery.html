@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#one").click(function(){
+    $(".para").append(" <b>Hello</b>.");
+  });
+
+  $("#two").click(function(){
+    $("ol").append("<li>Append Jquery</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+<p class="para">Good morning everyone</p>
+<p>This is about full stack developer</p>
+
+<ol>
+  <li>front end</li>
+  <li>back end</li>
+  <li>full stack developer</li>
+</ol>
+
+<button id="one">Append text</button>
+<button id="two">Append list</button>
+
+</body>
+</html>
